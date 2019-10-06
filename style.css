@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Assistant', sans-serif;
+}
+.wrapper1{
+  background: #cd6133;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+}
+.wrapper1 .profile-pic img{
+  height: 230px;
+  width: 200px;
+  border: 0.5rem solid #596275;;
+  border-radius: 50%;
+}
+.wrapper1 .profile-pic {
+  margin: 30px 0 30px 0;
+}
+.brief ul{
+  list-style: none;
+}
+.brief ul li{
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.brief ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ced6e0;
+}
+.brief ul li:hover a{
+  color: #fff;
+}
+
+.wrapper2{
+  margin-left: 20%;
+  background: #fff;
+} 
+
+/****************** START OF ABOUT SECTION ***************/
+
+.about-section{
+  padding: 10% 10%;
+}
+.about-section h1{
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #2C3A47;
+}
+.about-section h3{
+  margin: 3% 0 0 1%;
+}
+.about-section h1 span {
+  color: #e67e22;
+}
+.about-section .subheading{
+  color: #596275;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.subheading a{
+  color: #e67e22;
+  text-decoration: none;
+}
+.subheading a:hover{
+  text-decoration: underline;
+  color: #d35400;
+}
+.about-section .paragraph{
+  color: #57606f;
+  margin: 50px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+.about-section .social-icons a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 1%;
+  height: 60px;
+  width: 60px;
+  background: #596275;
+  color: #fff;
+  border-radius: 50%;
+}
+.social-icons a:hover{
+  background: #d35400;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+ 
+/****************** END OF ABOUT SECTION ***************/
+
+/******************* START OF EDUCATION SECTION ******************/
+
+.education-section{
+  padding: 7% 10%;
+}
+.education-section h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #2C3A47;
+  margin-bottom: 30px;
+}
+
+.education-section .main-name {
+  margin-bottom: 30px;
+}
+.main-name h2,
+.main-name .subheading,
+.main-name .edu-date{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.main-name .edu-date{
+  font-weight: bolder;
+  color: #d35400;
+}
+
+
+/******************* END OF EDUCATION SECTION ******************/
+
+/******************* START OF SKILLS SECTION ******************/
+
+.skills-section{
+  padding: 7% 10%;
+}
+.skills-section h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #2C3A47;
+  margin-bottom: 30px;
+}
+.skills-section h2{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.dev-icons i{
+  color: #596275;
+  margin: 10px 20px 30px 0;
+}
+.dev-icons i:hover{
+  color: #cd6133;
+}
+
+.workflow ul li{
+  margin-left: 3%;
+  list-style: none;
+  font-size: 20px;
+  line-height: 35px;
+  color: #57606f;
+}
+.workflow ul li::before{
+  font-family: "FontAwesome";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 10px;
+}
+
+
+/******************* END OF SKILLS SECTION ******************/
+
+/******************* START OF INTERESTS SECTION ******************/
+
+.interests-section{
+  padding: 7% 10%;
+}
+.interests-section h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #2C3A47;
+  margin-bottom: 30px;
+}
+.interests-section p{
+  color: #57606f;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/******************* END OF INTERESTS SECTION ******************/
+
+/******************* START OF AWARDS SECTION ******************/
+.awards-section{
+  padding: 7% 10%;
+}
+.awards-section h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #2C3A47;
+  margin-bottom: 30px;
+}
+.awards-section ul li{
+  list-style: none;
+  font-size: 20px;
+  line-height: 35px;
+  color: #57606f;
+}
+.awards-section ul li::before{
+  font-family: "FontAwesome";
+  content: "\f091";
+  display: inline-block;
+  padding-right: 10px;
+  color: #e1b12c;
+}
+
+/******************* END OF AWARDS SECTION ******************/
+
+
+@media (max-width:1200px){
+  .wrapper1{
+    display: none;
+  }
+}
