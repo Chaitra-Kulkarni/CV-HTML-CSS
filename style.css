@@ -15,14 +15,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 300px;
+  height: 100%;
+  width: 25%;
   position: fixed;
 }
 .wrapper1 .profile-pic img{
   height: 230px;
   width: 200px;
-  border: 0.5rem solid #596275;;
+  border: 0.5rem solid #57606f;
   border-radius: 50%;
 }
 .wrapper1 .profile-pic {
@@ -39,16 +39,47 @@ body{
 .brief ul li a{
   text-decoration: none;
   text-transform: uppercase;
-  color: #ced6e0;
+  color: #2C3A47;
+  font-size: 18px;
 }
 .brief ul li:hover a{
   color: #fff;
 }
-
 .wrapper2{
   margin-left: 20%;
   background: #fff;
 } 
+/****************** START OF NAVBAR SECTION ***************/
+.navbar{
+  width: 100%;
+  background: #cd6133;
+  overflow: auto;
+}
+.navbar ul{
+  text-align: end;
+}
+.navbar ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 30px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.toggle{
+  display: none;
+  width: 100%;
+  padding: 30px;
+  text-align: right;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/****************** END OF NAVBAR SECTION ***************/
 
 /****************** START OF ABOUT SECTION ***************/
 
@@ -125,6 +156,7 @@ body{
 .main-name .edu-date{
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #2C3A47;
 }
 .main-name .edu-date{
   font-weight: bolder;
@@ -148,6 +180,7 @@ body{
 .skills-section h2{
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: #2C3A47;
 }
 
 .dev-icons i{
@@ -220,9 +253,32 @@ body{
 
 /******************* END OF AWARDS SECTION ******************/
 
-
-@media (max-width:1200px){
+@media (max-width:900px){
+  .toggle{
+    display: block;
+  }
+  .navbar ul{
+    width: 100%;
+    display: none;
+  }
+  .navbar ul li{
+    display: block;
+    text-align: center;
+  }
+  .active{
+    display: block;
+  }
   .wrapper1{
+    display: none;
+  }
+  .wrapper2{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width:901px){
+  .navbar{
     display: none;
   }
 }
